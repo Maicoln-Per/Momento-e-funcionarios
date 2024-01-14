@@ -485,19 +485,12 @@ WHERE funcionario_id = 555;
 select * from funcionarios where funcionario_id = 555;
 
 INSERT INTO funcionarios(funcionario_id, primeiro_nome, sobrenome, email, senha, telefone, data_contratacao, cargo_id, salario, gerente_id, departamento_id)
-VALUES (556, 'Carla', 'Silva', 'carla.silva@email.com', 'senhacarla123', '987.654.321-00', '2023-05-15', 5, 4800.00, 101, 2);
-
-INSERT INTO funcionarios(funcionario_id, primeiro_nome, sobrenome, email, senha, telefone, data_contratacao, cargo_id, salario, gerente_id, departamento_id)
-VALUES (557, 'Pedro', 'Mendes', 'pedro.mendes@email.com', 'senhapedro456', '123.456.789-01', '2023-07-22', 3, 6000.00, 102, 1);
-
-INSERT INTO funcionarios(funcionario_id, primeiro_nome, sobrenome, email, senha, telefone, data_contratacao, cargo_id, salario, gerente_id, departamento_id)
-VALUES (558, 'Ana', 'Santos', 'ana.santos@email.com', 'senhaana789', '555.111.222-33', '2023-09-10', 7, 7000.00, 103, 3);
-
-INSERT INTO funcionarios(funcionario_id, primeiro_nome, sobrenome, email, senha, telefone, data_contratacao, cargo_id, salario, gerente_id, departamento_id)
-VALUES (559, 'Rafael', 'Oliveira', 'rafael.oliveira@email.com', 'senharafaelabc', '777.888.999-44', '2023-11-28', 6, 5500.00, 104, 5);
-
-INSERT INTO funcionarios(funcionario_id, primeiro_nome, sobrenome, email, senha, telefone, data_contratacao, cargo_id, salario, gerente_id, departamento_id)
-VALUES (560, 'Fernanda', 'Costa', 'fernanda.costa@email.com', 'senhafernanda567', '222.333.444-55', '2024-01-05', 4, 6200.00, 105, 6);
+VALUES 
+  (556, 'Carla', 'Silva', 'carla.silva@email.com', 'senhacarla123', '987.654.321-00', '2023-05-15', 5, 4800.00, 101, 1),
+  (557, 'Pedro', 'Mendes', 'pedro.mendes@email.com', 'senhapedro456', '123.456.789-01', '2023-07-22', 3, 6000.00, 102, 1),
+  (558, 'Ana', 'Santos', 'ana.santos@email.com', 'senhaana789', '555.111.222-33', '2023-09-10', 7, 7000.00, 103, 1),
+  (559, 'Rafael', 'Oliveira', 'rafael.oliveira@email.com', 'senharafaelabc', '777.888.999-44', '2023-11-28', 6, 5500.00, 104, 1),
+  (560, 'Fernanda', 'Costa', 'fernanda.costa@email.com', 'senhafernanda567', '222.333.444-55', '2024-01-05', 4, 6200.00, 105, 1);
 
 
 select count(*) as total_funcionarios from funcionarios;
