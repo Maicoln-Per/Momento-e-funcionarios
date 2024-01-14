@@ -532,6 +532,7 @@ SELECT r.regiao_nome, p.pais_nome
 FROM regioes r
 JOIN paises p ON r.regiao_id = p.regiao_id;
 
+
 SELECT primeiro_nome, sobrenome FROM funcionarios WHERE funcionario_id = 111; 
 
 SELECT primeiro_nome, sobrenome FROM dependentes WHERE funcionario_id = 112;
@@ -543,6 +544,8 @@ GROUP BY r.regiao_id
 ORDER BY total_paises DESC
 LIMIT 1;
 
+SELECT regioes.regiao_nome, COUNT(paises.regiao_id) FROM paises INNER JOIN regioes WHERE regioes.regiao_id = paises.regiao_id GROUP BY regioes.regiao_nome;
+
 SELECT
   f.primeiro_nome AS nome_funcionario,
   d.primeiro_nome AS nome_dependente
@@ -551,4 +554,4 @@ FROM
 LEFT JOIN
   dependentes d ON f.funcionario_id = d.funcionario_id;
 
-SELECT primeiro_nome, sobrenome FROM dependentes WHERE funcionario_id = 146;
+SELECT primeiro_nome, sobrenome, relacionamento FROM dependentes WHERE funcionario_id = 146;
