@@ -2,11 +2,13 @@
 
 A Momento é uma empresa única que faz o melhor que pode para alcançar o melhor da humanidade. 
 
-Dessa forma, O que a Momento faz? 
+ > O arquivo momento_database é o arquivo inicial, sem nenhuma alteração.
 
-Há alguma empresa que faça algo parecido? 
+ > O arquivo momento_r é o arquivo resolvido, com as alterações e querys.
 
-E qual o seu ideal de empresa? 
+ > Exercicios foram feitos no MySQL Workbench!
+
+ > Exercicios de Banco de Dados feitos durante o curso do Instituto PROA
 
 ## ***Podemos juntar?***
 Podemos!
